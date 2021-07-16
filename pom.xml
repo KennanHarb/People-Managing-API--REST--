@@ -5,20 +5,24 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.6.RELEASE</version>
+		<version>2.5.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>one.digitalinnovation</groupId>
-	<artifactId>personapi</artifactId>
+	<groupId>one.digital.innovation</groupId>
+	<artifactId>peopleapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>personapi</name>
-	<description>Person API project created for DIO</description>
+	<name>peopleapi</name>
+	<description>People API project</description>
 
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
